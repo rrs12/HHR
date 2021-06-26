@@ -1,0 +1,60 @@
+#welcome h1{
+  font-family: 'Benne', serif;
+  font-weight: bolder;
+}
+#welcome img{
+  height: 400px;
+  width: 400px;
+}
+#welcome{
+  margin-top: 100px;
+  text-align: center;
+}
+
+#about{
+  border: black solid 2px ;
+  border-radius: 10px;
+  text-align: center;
+  align-content: center;
+  color: white;
+  padding: 10px;
+  margin: 20px;
+  border-radius: 50px;
+  font-family: 'Benne', serif;
+  font-weight: bolder;
+}
+#about hr{
+  width: 30%;
+  height: 2px;
+  background-color: #00887A;
+  border: none;
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 330px) {
+  #welcome h1{
+    right: 20px;
+    font-family: 'Benne', serif;
+    font-weight: bolder;
+    margin-left: 159px;
+  }
+}
+
+
+@media only screen and (max-width: 400px) {
+  #welcome h1{
+    right: 20px;
+    font-family: 'Benne', serif;
+    font-weight: bolder;
+    margin-left: 70px;
+  }
+}
+
+
+
