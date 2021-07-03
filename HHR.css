@@ -9,6 +9,7 @@
 #welcome{
   margin-top: 100px;
   text-align: center;
+  
 }
 
 #about{
@@ -18,43 +19,78 @@
   align-content: center;
   color: white;
   padding: 10px;
-  margin: 20px;
   border-radius: 50px;
   font-family: 'Benne', serif;
   font-weight: bolder;
+  margin-bottom: 20px;
+  margin-left: 20px !important;
+  margin-right: 20px !important;
+
 }
+
 #about hr{
   width: 30%;
   height: 2px;
   background-color: #00887A;
   border: none;
 }
-
-
-
-
-
-
-
-
-@media only screen and (max-width: 330px) {
-  #welcome h1{
-    right: 20px;
-    font-family: 'Benne', serif;
-    font-weight: bolder;
-    margin-left: 159px;
-  }
+#ask_number input{
+  width: 60% !important;
+  height: 50px !important;
+  border-radius: 100px !important;
+  border: white solid 2px !important;
+  color: white !important;
+  font-size: large !important;
+  background-color:transparent;
 }
+#ask_number{
+  margin-top: 100px !important;
+  justify-content: center;
+}
+#ask_number h1{
+ color: white;
+ font-family: 'Benne', serif;
+ font-weight: bolder;
+ width:max-content;
+ font-size: 35px !important;
+}
+
+#ask_number button{
+  color: white;
+  font-family: 'Benne', serif;
+  font-weight: bolder;
+  border-radius: 100px;
+  background: #e96443; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #e96443, #904e95); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #e96443, #904e95); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-size: 25px;
+}
+#ask_number button:hover{
+  background-color:rgba(0, 0, 0, 0);
+  color: white;
+  font-family: 'Benne', serif;
+  font-weight: bolder;
+  border-radius: 100px;
+  font-size: 26px;
+  border: white solid 2px;
+}
+
 
 
 @media only screen and (max-width: 400px) {
-  #welcome h1{
-    right: 20px;
-    font-family: 'Benne', serif;
-    font-weight: bolder;
-    margin-left: 70px;
+  #welcome img{
+height: 310px;
+width: 310px;
   }
 }
+@media only screen and (max-width: 300px) {
+  #welcome img{
+height: 250px;
+width: 250px;
+  }
+}
+
+
 
 
 
