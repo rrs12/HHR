@@ -1,5 +1,6 @@
 body{
-    background: #6ca2ff !important;
+  background: rgb(255,175,215) !important;
+background: linear-gradient(90deg, rgba(255,175,215,1) 0%, rgba(255,195,49,1) 100%) !important;
 }
 li{
     margin: 0;

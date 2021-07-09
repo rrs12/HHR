@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HHR</title>
+    <link rel="stylesheet" href="HHR.css">
+    <link rel="stylesheet" href="navigation.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Benne&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .x {
+            width: 40%;
+            height: 2px;
+            background-color: #00887A;
+            border: none;
+
+        }
+
+        .y {
+            width: 30%;
+            height: 2px;
+            background-color: #00887A;
+            border: none;
+
+        }
+
+
+
+        .item {
+            background-color: rgba(255, 255, 255, 0.7);
+            color: black;
+            border-radius: 25px;
+            font-family: 'Benne', serif;
+        }
+
+        .item button {
+            background: #FF8008;
+            background: -webkit-linear-gradient(to right, #FFC837, #FF8008);
+            background: linear-gradient(to right, #FFC837, #FF8008);
+            border-radius: 100px !important;
+            border: white solid 2px !important;
+            color: white !important;
+            font-size: larger !important;
+            margin-bottom: 5px !important;
+            z-index: -10 !important;
+
+        }
+
+        .item button:hover {
+            background-color: rgba(0, 0, 0, 0);
+            color: white;
+            font-family: 'Benne', serif;
+            font-weight: bolder;
+            border-radius: 100px;
+            font-size: 26px;
+            border: white solid 2px;
+            cursor: pointer;
+        }
+
+        .owl-carousel {
+            z-index: 0;
+        }
+    </style>
+</head>
+
+
+<body>
+    <input type="checkbox" id="active">
+    <label for="active" class="menu-btn"><i class="fa fa-bars"></i></label>
+    <div class="wrapper">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </div>
+    <center>
+        <div id="welcome">
+            <h1>Our Book Store</h1>
+            <img src="./assets/HHR Logo.png" id="logo" class="img-responive">
+            <br>
+            <br>
+        </div>
+
+        <!--Moral Starts-->
+        <h1>Moral Stories
+            <hr class="x">
+            <hr class="y">
+        </h1>
+
+        <div class="owl-carousel owl-theme">
+            <div class="item"><br>
+                <h1> <b>The very expensive coconut</b></h1>
+                <h2>By:Sudha Murthy</h2>
+                <h3>Price:₹50</h3>
+                <button onclick="buyBook(this.id)" id="the_very_expensive_coconut" class="btn">Buy Book</button>
+            </div>
+            <div class="item"><br>
+                <h1> <b>The Foolish Thief</b></h1>
+                <h2>By:Sudha Murthy</h2>
+                <h3>Price:₹50</h3>
+                <button onclick="buyBook(this.id)" id="The_Foolish_Thief" class="btn">Buy Book</button>
+            </div>
+            <div class="item"><br>
+                <h1> <b>Seed of truth</b></h1>
+                <h2>By:Sudha Murthy</h2>
+                <h3>Price:₹50</h3>
+                <button onclick="buyBook(this.id)" id="Seed_of_truth" class="btn">Buy Book</button>
+            </div>
+        </div>
+        <!--Moral Ends-->
+        <br><br><br>
+        <!--Comic Starts-->
+        <h1>Comic Stories
+            <hr class="x">
+            <hr class="y">
+        </h1>
+        <div class="owl-carousel owl-theme">
+            <div class="item"><br>
+                <h1> <b>The Advendutres of Baddu and Chottu</b></h1>
+                <h2>By:Luis Fernandes, Rupa Gupta</h2>
+                <h3>Price:₹50</h3>
+                <button onclick="buyBook(this.id)" id="The_Advendutres_of_Baddu_and_Chottu" class="btn">Buy
+                    Book</button>
+            </div>
+
+            <div class="item"><br>
+                <h1> <b>Bikal the Terrible and the Tiger-Tamers</b></h1>
+                <h2>By:Meera Ugra,Luis Fernandes</h2>
+                <h3>Price:₹50</h3>
+                <button onclick="buyBook(this.id)" id="Bikal_the_Terrible_and_the_Tiger-Tamers" class="btn">Buy
+                    Book</button>
+            </div>
+
+        </div>
+        <!--Comic Ends-->
+
+        <br><br><br>
+        <!--Biography Starts-->
+        <h1>Biographies
+            <hr class="x">
+            <hr class="y">
+        </h1>
+        <div class="owl-carousel owl-theme">
+            <div class="item"><br>
+                <h1> <b>Short Biography on Marie Curie</b></h1>
+                <h2>By:Vidushi Singh</h2>
+                <h3>Price:₹50</h3>
+                <button onclick="buyBook(this.id)" id="Short_biography_on_Marie_Curie" class="btn">Buy Book</button>
+            </div>
+
+        </div>
+        <!--Biography Ends-->
+
+
+    </center>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+    <script src="HHR.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="owl_carousel.js"></script>
+</body>
+
+</html>
