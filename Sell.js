@@ -13,7 +13,7 @@ var firebaseConfig = {
 user_no= document.getElementById("no_user").value;
 email_user= document.getElementById("email_user").value;
 
-room_name="Buy_Book"
+room_name="Sell_Book"
 function submit(){
   
   document.getElementById("ask_number").style.display="none"
@@ -27,8 +27,4 @@ function submit(){
         book: buy_book
   })
 
-}
-function buyBook(clicked_me){
-localStorage.setItem("book", clicked_me)
-window.location= "GetBook.html"
 }
