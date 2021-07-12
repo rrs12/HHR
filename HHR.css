@@ -77,14 +77,14 @@
 
 
 
-@media only screen and (max-width: 400px) {
-  #welcome img{
+@media only screen and (max-width: 550px) {
+  #logo{
 height: 310px;
 width: 310px;
   }
 }
-@media only screen and (max-width: 300px) {
-  #welcome img{
+@media only screen and (max-width: 350px) {
+  #logo{
 height: 250px;
 width: 250px;
   }
