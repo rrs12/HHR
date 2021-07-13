@@ -6,7 +6,6 @@ li{
     padding: 0;
     box-sizing: border-box;
     font-family: 'Lato', sans-serif;
-    font-family: 'Oswald', sans-serif;
   }
   .wrapper{
     
@@ -67,7 +66,7 @@ li{
     text-decoration: none;
     font-size: 30px;
     font-weight: 500;
-    padding: 5px 30px;
+    padding: 5px 8px;
     color: #fff;
     border-radius: 50px;
     background: #000;
@@ -103,25 +102,7 @@ li{
   input{
       background-color: transparent;
   }
-  .content{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: -1;
-    text-align: center;
-    width: 100%;
-    color: #202020;
-  }
-  .content .title{
-    font-size: 40px;
-    font-weight: 700;
-  }
-  .content p{
-    font-size: 35px;
-    font-weight: 600;
-  }
-  
+
   @keyframes rotate {
     0%{
       filter: hue-rotate(0deg);
