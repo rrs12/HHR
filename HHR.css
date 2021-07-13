@@ -2,7 +2,7 @@
   font-family: 'Benne', serif;
   font-weight: bolder;
 }
-#welcome img{
+#logo{
   height: 400px;
   width: 400px;
 }
@@ -23,8 +23,8 @@
   font-family: 'Benne', serif;
   font-weight: bolder;
   margin-bottom: 20px;
-  margin-left: 20px !important;
-  margin-right: 20px !important;
+  margin-left: 15px !important;
+  margin-right: 15px !important;
 
 }
 
